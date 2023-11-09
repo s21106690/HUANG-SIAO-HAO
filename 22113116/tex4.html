@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+/*--------------*/
+.banner-left img, .banner-right img,.banner-左 img,.banner-右 img{
+    width: 245px;
+    height: 500px;
+    position: absolute;
+}
+
+.banner-left img {
+    left: 0;
+}
+
+.banner-right img {
+    right: 0;
+}
+.banner-左 img {
+    left: 0;
+    top: 900px
+}
+
+.banner-右 img {
+    right: 0;
+    top: 900px
+}
+
+
+ /*-------------------------------*/
+*{
+            padding: 0;
+            margin: 0;
+
+        }
+        .custom-container{
+            width: 960px;
+            margin: auto;
+
+        }
+        .col{
+            width: 300px;
+            padding: 5px;
+            margin: 5px;
+            float: left;
+            background-color: #000;
+                }
+
+
+        .col-2 {
+            width: 460px;
+            padding: 5px;
+            margin: 5px;
+            float: left;
+            background-color: #000;
+        }
+
+        img{
+            width: 100%;
+        }
+        .clear-fix{
+            clear: both;
+            height: 0;
+        }
+/*---------------------------------------------------------*/
+        /*logo持續發亮*/
+        .glowing-image {
+                    width: 100px;
+                    height: 100px;
+                    background-color: #03f480; /* 发光颜色 */
+                    box-shadow: 0 0 10px #03f488, 0 0 20px #03f453, 0 0 30px #03f46b; /* 发光效果 */
+                    border-radius: 50%; /* 圆形 */
+                    margin-right: 70px;
+                }
+        
+                .glowing-image img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; /* 图像充满整个容器 */
+                    border-radius: 50%; /* 与包围元素相同的圆形 */
+                }
+        
+                .nav{
+                    justify-content: center; 
+                    align-items: center; 
+                    display: flex;
+                }      
+        
+ /*---------------------------------------------------------*/
+        /*標題選擇*/
+        .banner img {
+            width: 100%; /* 寬度100% */
+        }
+                *{
+         margin: 0;
+         padding: 0;
+         font-family: consolas;
+         box-sizing: border-box;
+        }
+        
+        .container{
+         background-color: #050801;
+         display: inline-block; /* 使列表項內容以內聯塊元素排列 */
+         font-size: 10px; /* 字體大小 */
+         padding: 20px; /* 內邊距 */
+         text-align: center;
+        }
+        
+        a{
+         position: relative;
+         display:inline-block;
+         padding: 10px 25px;
+         margin: 40px 0;
+         color: #13bddb;
+         font-size: 30px;
+         text-decoration: none;
+         text-transform: uppercase;
+         overflow: hidden;
+         transition: 0.5s;
+         letter-spacing: 4px;
+         -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);  
+        }
+        a:nth-child(1){
+         filter:hue-rotate(290deg)
+        }
+        a:nth-child(3){
+         filter:hue-rotate(110deg)
+        }
+        a:hover{
+         background-color: #03e9f4;
+         color: #050801;
+         box-shadow: 0 0 5px #03e9f4,
+                     0 0 25px #03e9f4,
+                     0 0 50px #03e9f4,
+                     0 0 200px #03e9f4;
+        }
+        a span{
+         position: absolute;
+         display: block; 
+        }
+        a span:nth-child(1){
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 2px;
+         background: linear-gradient(90deg,transparent,#03e9f4);
+         animation: animate1 1s linear infinite;
+        }
+        @keyframes animate1{
+         0%{left: -100%;}
+         50%,100%{left: 100%;}
+        }
+        
+        a span:nth-child(2){
+         top: -100%;
+         right: 0;
+         width: 2px;
+         height: 100%;
+         background: linear-gradient(180deg,transparent,#03e9f4);
+         animation: animate2 1s  linear infinite;
+         animation-delay: 0.25s;
+        }
+        @keyframes animate2{
+         0%{top: -100%;}
+         50%,100%{top: 100%;}
+        }
+        
+        a span:nth-child(3){
+         bottom: 0;
+         right: -100%;
+         width: 100%;
+         height: 2px;
+         background: linear-gradient(270deg,transparent,#03e9f4);
+         animation: animate3 1s linear infinite;
+         animation-delay: 0.5s;
+        }
+        @keyframes animate3{
+         0%{right: -100%;}
+         50%,100%{right: 100%;}
+        }
+        
+        a span:nth-child(4){
+         bottom: -100%;
+         left: 0;
+         width: 2px;
+         height: 100%;
+         background: linear-gradient(360deg,transparent,#03e9f4);
+         animation: animate4 1s  linear infinite;
+         animation-delay: .75s;
+        }
+        @keyframes animate4{
+         0%{bottom: -100%;}
+         50%,100%{bottom: 100%;}
+        }
+        
+        
+        table,tr,th,td{
+                        border: 1px solid rgb(255, 255, 255);
+                        border-collapse: collapse;
+                        font-size: 25px;
+                        text-align: center;
+                        color: azure;
+                        }
+        
+                    table{
+                        width: 600px;
+                        height: 400px;
+                        color: rgb(255, 255, 255);
+                    }
+/*---------------------------------------------------------*/
+/*footer*/
+.footer {
+    background-color: #0b0a0a;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+/*--------------*/
+/*path*/
+
+.path {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.path li {
+    padding: 6px 8px;
+    position: relative;
+}
+
+.path li+li::before {
+    content: "/";
+    color: #999;
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.path li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center; /* 水平居中 */
+    box-shadow: none; /* 刪除發光效果 */
+}
+    </style>
+
+</head>
+
+<body style="background-color:rgba(0,0,0);">
+
+    <ul class="nav"> 
+
+        <div class="glowing-image">
+        
+            <img src="./黑色LOGE.png" alt="Your Image">
+            
+        </div>
+
+        <div class="container">
+            <a href="./index.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                首頁
+            </a>
+        </div>
+    
+        <div class="container">
+            <a href="./tex1.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                我的詳細資料
+            </a>
+        </div>
+    
+        <div class="container">
+            <a href="./tex2.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                作品
+            </a>
+        </div>
+    
+        <div class="container">
+            <a href="./tex3.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                學習歷程自述
+            </a>
+        </div>
+        <div class="container">
+            <a href="./tex4.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                喜愛的遊戲
+            </a>
+        </div>
+    </ul> 
+<!------------------------------------------->
+
+<ul class="path">
+    <li><a href="./tex2.html">作品</a></li>
+    <li><a href="./tex3.html">歷程</a></li>
+    <li><a href="./tex4.html">遊戲</a></li>
+</ul>
+
+
+<div class="banner-left">
+    <img src="./電玩店gif.gif" alt="电玩店">
+</div>
+
+<div class="banner-right">
+    <img src="./城市gif.gif" alt="电玩店">
+</div>
+<div class="banner-左">
+    <img src="./風景gif.gif" alt="电玩店">
+</div>
+
+<div class="banner-右">
+    <img src="./一人gif.gif" alt="电玩店">
+</div>
+<div class="custom-container">
+    <div class="col">
+        <img src="./v2-89af514b5fd683a09d4563e82b3ef9aa_ipico.png" href="https://play.google.com/store/apps/details?id=com.ChillyRoom.DungeonShooter&hl=zh_TW&gl=US">
+        <h3 style= "color:rgb(241, 241, 241);">元氣騎士</h3>
+        <p style= "color:rgb(241, 241, 241);">《元氣騎士》是一款由涼屋遊戲開發的Roguelike像素射擊彈幕遊戲。
+            於2017年4月18日發行，行動端支援Android和iOS平台。
+            任天堂Switch版於2019年9月19日發行。
+            背景設定在外星人奪走維持世界平衡之魔法石的世界，玩家將扮演多種角色奪回魔法石。</p>
+    </div>
+    <div class="col">
+        <img src="./Umamusume_logo.png">
+        <h3 style= "color:rgb(241, 241, 241);">賽馬娘 Pretty Derbye</h3>
+        <p style= "color:rgb(241, 241, 241);">是遊戲開發公司Cygames眾多有名作品的其中之一。
+            作品項目包含遊戲與PC遊戲、動畫、漫畫和音樂的多媒體企劃。
+            簡稱「馬娘」（ウマ娘）。
+            遊戲內容是以競賽馬萌擬人化為主題，並以拿下大賽勝利為目標的養成遊戲。
+            遊戲製作人初始由曾經參與《偶像大師系列》開發的石原章弘擔任。</p>
+    </div>
+    <div class="col">
+        <img src="./unnamed.jpg">
+        <h3 style= "color:rgb(241, 241, 241);">貓咪大戰爭</h3>
+        <p style= "color:rgb(241, 241, 241);">是一款Ponos發行的以貓咪為主角的橫向塔防遊戲，隨著遊戲的進行會不斷出現新的功能或關卡。
+            目前遊戲總下載量約為8100萬，至今仍持續增長中。
+            遊戲中使用貓罐頭、經驗值（XP）和本能點數（NP）作為代幣。
+            </p>
+    </div>
+    <div class="col-2">
+        <img src="./64616.jpg">
+        <h3 style= "color:rgb(241, 241, 241);">怪物彈珠</h3>
+        <p style= "color:rgb(241, 241, 241);">是日本mixi株式會社的「XFLAG工作室」製作的iOS和Android系統手機遊戲應用程式。
+            2013年9月開始營運。
+            2015年5月取代GungHo的《Puzzle & Dragons》成為日本收入次高、全球收入第3高的手機遊戲，2015年6月30日更創出單日營收420萬美元的成績。
+            目前為全日本營收第一的手遊。
+            遊戲基本免費，設有體力限制機制。
+            </p>
+    </div>
+
+    <div class="col-2">
+        <img src="./下載.jpg">
+        <h3 style= "color:rgb(241, 241, 241);">霓虹深淵：無限</h3>
+        <p style= "color:rgb(241, 241, 241);">《霓虹深淵: 無限》是一款賽博龐克主題的射擊動作Roguelike遊戲，以華麗的彈幕射擊和刺激的戰鬥為特色。
+            玩家將扮演一名特工，探索深淵的未知區域。在遊戲裡的地下城非常廣闊，供你探索不同的區域，並迎接屬於你的最新挑戰。
+            玩家還可以根據自己的喜好自由搭配各種技能和武器，體驗不同的戰鬥風格。與此同時，紀念品之間可以相互作用和疊加，沒有數量限制，還可以攜帶寵物並可以多次進化，助你戰勝強敵。
+            遊戲也特別注重玩家的爽快體驗。
+            玩家同時衝刺、跳躍和持續開火，確保靈活的移動和不間斷的火力輸出等，向玩家展現了別出心裁又耳目一新的畫面特效，保證能帶給玩家令人驚豔的視覺震撼體驗。
+                </p>
+    </div>
+    <div class="clear-fix"></div>
+</div>
+
+
+<!------------------------------------------->
+
+
+
+<div class="footer" style="color:rgb(241, 241, 241);">
+    copyright&copy; chun yen yeh 2022.
+</div>
+
+
+
+</body>
+</html>
